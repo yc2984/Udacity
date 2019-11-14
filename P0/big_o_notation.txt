@@ -1,0 +1,13 @@
+Task0: O(1), time complexity doesn't depend on the length of input
+
+Task1: O(n).  list comprehension [text[0] for text in texts] has the order of n. and set() operation has order of n.
+              the list operation of a set should have an order of n, and the + of the lists has an order O(1).
+              So the overal run time complexity is O(n)
+
+Task2: O(n):   max method has an order of n. List get item has O(1). The for loop has O(n). dict set method
+              in worst case could be O(n).
+
+Task3: O(n),  function get_area_code has O(1). for loop has O(n). the judgement for whether an element is in a list has
+              O(n). list append method has o(1).
+
+Task 4: O(nlogn). the sort operation has highest complexity, it has O(nlogn)
