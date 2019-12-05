@@ -1,0 +1,49 @@
+number = 123
+
+all_codes(123)
+
+remainder_100 = 123 % 100 = 23
+output_100 = []
+if remainder_100 <= 26 and number > 9 --> yes
+output_100 = all_codes(number // 100 = 1) = ['a']
+--> number = 1
+    remainder_100 = 1 % 100 = 1
+    output_100 = []
+    if remainder_100 <= 26 and number > 9 --> no
+
+    remainder_10 = number % 10 = 1 % 10 = 1
+    output_10 = all_codes( number //10 = 1// 10 = 0) = [""]
+    alphabet = get_alphabet(remainder_10 = 1) = 'a'
+
+    for every element in output_10, we attach alphabet to it.
+    output_10 = ['a']
+
+    output = ['a']
+
+
+alphabet = get_alphabet(remainder_100 = 23) = 'w'
+for every element in output_100 attach alphabet to it.
+output_100 = ['aw']
+
+remainder_10 = number % 10 = 3
+output_10 = all_codes(number // 10 = 123 // 10 = 12) = ['l', 'ab']
+--> remainder_100 = 12 % 100 = 12
+    output_100 = []
+    if remainder_100 <= 26 and number > 9: --> yes
+    output_100 = all_codes(12 // 100 = 0) = [""]
+    alphabet = get_alphabet(remainder_100 = 12) = 'l'
+    for every element in output_100, attach alphabet to it
+    output_100 = ["l"]
+
+    remainder_10 = number % 10 = 12 % 10 = 2
+    output_10 = all_codes(number //10 = 1) = 'a'
+    alphabet = get_alphabet(remainder_10) = 'b'
+    for every element in output_10, attach alphabet to it
+    output_10 = 'ab'
+
+    output = output_100 + output_10 = ['l', 'ab']
+
+alphabet = get_alphabet(remainder_10) = 'c'
+for every element in output_10, attach alphabet
+output_10 = ['lc', 'abc']
+output = output_10 + output_100 = ['lc', 'abc', 'aw']

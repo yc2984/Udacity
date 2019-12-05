@@ -1,0 +1,65 @@
+example: 1145
+
+number = 1145
+remainder_100 = 1145 % 100 = 45
+output_100 = []
+if remainder_100 <= 26 and number > 9 --> no
+
+remainder_10 = 1145 % 10 = 5
+output_10 = all_codes(number // 10 = 114)
+
+ --> number = 114
+     remainder_100 = 114 % 100 = 14
+     output_100 = []
+     if remainder_100 <= 26 and number > 9 --> yes
+     output_100 = all_codes(number // 100 = 1) = ['a']
+
+     --> number = 1
+         remainder_100 = 1 % 100 = 1
+         output_100 = []
+         if remainder_100 <= 26 and number > 9 --> no
+         remainder_10 = 1 % 10 = 1
+         output_10 = all_codes(1 // 10 = 0) =  [""]
+         alphabet = get_alphabet(remainder_10 = 1) = 'a'
+         for index, element in enumerate(output_10):
+             index = 0
+             element = ""
+             output_10[0] = "" + "a" = "a"
+         output = []
+         output.extend("a")
+         return ['a']
+
+         --> return [""]
+
+     alphabet = get_alphabet(remainder_100 = 14) = 'n'
+     for index, element in enumerate(output_100 = ['a']):
+         output_100[0] = "a" + "n" = "an"
+     remainder_10 = number % 10 = 114 % 10 = 4
+     output_10 = all_codes(number // 10 = 114//10 = 11)
+     --> number = 11
+         remainder_100 = (number % 100) = 11 % 100 = 11
+         output_100 = []
+         if remainder_100 <= 26 and number > 9 - > yes
+         output_100 = all_codes(number // 100 = 11 // 100 = 0) = [""]
+         --> number = 0
+             return [""]
+         alphabet = get_alphabet(remainder_100 = 11) = 'k'
+         for index, element in enumerate(output_100 = [""]):
+             output_100[0] = "" + 'k' = 'k'
+         remainder_10 = number % 10 = 1
+         output_10 = all_codes(number // 10 = 1)
+         --> number = 1
+             remainder_100 = number % 100 = 1
+             output_100 = []
+             if remainder_100 <= 26 and number > 9 -> no
+             remainder_10 = number % 10 = 1
+             output_10 = all_codes(number // 10 = 0) = [""]
+             alphabet = get_alphabet(remainder_10 = 1) = 'a'
+             for index, element in enumerate(output_10) = ['']:
+                 output_10[0] = 'a'
+             output = []
+             output.extend(output_100)
+             output.extent(output_10)
+             output = [""]
+
+
