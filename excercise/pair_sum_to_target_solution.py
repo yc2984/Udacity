@@ -1,15 +1,10 @@
-# [YC] yay! but the time complexity is O(n*k or n^2), not O(n)
-def find_index(index, input_list, target):
-    sec_indexes = range(index + 1, len(input_list))
-    for sec_index in sec_indexes:
-        if input_list[index] + input_list[sec_index] == target:
-            return [index, sec_index]
-    return find_index(index + 1, input_list, target)
-
 def pair_sum_to_zero(input_list, target):
-    # TODO: Write pair sum to zero function
-    index = 0
-    return find_index(index, input_list, target)
+    index_dict = dict()
+    for index, element in enumerate(input_list):
+        if target - element in index_dict:
+            return [index_dict[target - element], index]
+        index_dict[element] = index
+
 
 def test_function(test_case):
     output = pair_sum_to_zero(test_case[0], test_case[1])
