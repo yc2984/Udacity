@@ -2,52 +2,124 @@ import sys
 import operator
 from collections import deque
 
-class Node(object):
-
-    def __init__(self,  key=None, value=None):
-        self.key = key
-        self.value = value
+class Node:
+    def __init__(self, freq, char=None):
+        self.char = char
+        self.freq = freq
+        self.code = None
         self.left = None
         self.right = None
 
-    def set_value(self, value):
-        self.value = value
+class Heap:
+    def __init__(self, initial_size=10):
+        self.cbt = [None for _ in range(initial_size)]  # initialize arrays
+        self.next_index = 0  # denotes next index where new element should go
 
-    def get_value(self):
-        return self.value
+    def insert(self, node):
+        # insert element at the next index
+        self.cbt[self.next_index] = node
 
-    def set_left_child(self, left):
-        self.left = left
+        # heapify
+        self._up_heapify()
 
-    def set_right_child(self, right):
-        self.right = right
+        # increase index by 1
+        self.next_index += 1
 
-    def get_left_child(self):
-        return self.left
+        # double the array and copy elements if next_index goes out of array bounds
+        if self.next_index >= len(self.cbt):
+            temp = self.cbt
+            self.cbt = [None for _ in range(2 * len(self.cbt))]
 
-    def get_right_child(self):
-        return self.right
+            for index in range(self.next_index):
+                self.cbt[index] = temp[index]
 
-    def has_left_child(self):
-        return self.left != None
+    def remove(self):
+        if self.size() == 0:
+            return None
+        self.next_index -= 1
 
-    def has_right_child(self):
-        return self.right != None
+        to_remove = self.cbt[0]
+        last_element = self.cbt[self.next_index]
 
-    # define __repr_ to decide what a print statement displays for a Node object
-    def __repr__(self):
-        return f"Node({self.get_value()})"
+        # place last element of the cbt at the root
+        self.cbt[0] = last_element
 
-    def __str__(self):
-        return f"Node({self.get_value()})"
+        # we do not remove the elementm, rather we allow next `insert` operation to overwrite it
+        self.cbt[self.next_index] = to_remove
+        self._down_heapify()
+        return to_remove
 
+    def size(self):
+        return self.next_index
 
-class Tree():
-    def __init__(self, value=None):
-        self.root = Node(value)
+    def is_empty(self):
+        return self.size() == 0
 
-    def get_root(self):
-        return self.root
+    def _up_heapify(self):
+        # print("inside heapify")
+        child_index = self.next_index
+
+        while child_index >= 1:
+            parent_index = (child_index - 1) // 2
+            parent_element = self.cbt[parent_index]
+            child_element = self.cbt[child_index]
+
+            if parent_element.freq > child_element.freq:
+                self.cbt[parent_index] = child_element
+                self.cbt[child_index] = parent_element
+
+                child_index = parent_index
+            else:
+                break
+
+    def _down_heapify(self):
+        parent_index = 0
+
+        while parent_index < self.next_index:
+            left_child_index = 2 * parent_index + 1
+            right_child_index = 2 * parent_index + 2
+
+            parent = self.cbt[parent_index]
+            left_child = None
+            right_child = None
+
+            min_element = parent
+
+            # check if left child exists
+            if left_child_index < self.next_index:
+                left_child = self.cbt[left_child_index]
+
+            # check if right child exists
+            if right_child_index < self.next_index:
+                right_child = self.cbt[right_child_index]
+
+            # compare with left child
+            if left_child is not None:
+                min_element = parent if parent.freq <= left_child.freq else left_child
+
+            # compare with right child
+            if right_child is not None:
+                min_element = right_child if right_child.freq < min_element.freq else min_element
+
+            # check if parent is rightly placed
+            if min_element.freq == parent.freq:
+                return
+
+            if min_element.freq == left_child.freq:
+                self.cbt[left_child_index] = parent
+                self.cbt[parent_index] = min_element
+                parent = left_child_index
+
+            elif min_element == right_child:
+                self.cbt[right_child_index] = parent
+                self.cbt[parent_index] = min_element
+                parent = right_child_index
+
+    def get_minimum(self):
+        # Returns the minimum element present in the heap
+        if self.size() == 0:
+            return None
+        return self.cbt[0]
 
 
 def get_freq_tuple_list(data):
@@ -57,44 +129,64 @@ def get_freq_tuple_list(data):
     """
 
     # Find the frequency of each letter
-    freq = {}
+    freq_dict = {}
     for letter in data:
-        if letter not in freq:
-            freq[letter] = 1
+        if letter not in freq_dict:
+            freq_dict[letter] = 1
         else:
-            freq[letter] += 1
-    print(type(freq.items()))
-    # a queue of tuples with the letter as the first element and frequency as the second element
-    order_freq = deque(sorted(freq.items(), key=operator.itemgetter(1)))
-    return order_freq
+            freq_dict[letter] += 1
+    print(freq_dict)
+    return freq_dict
 
 
-def sort_queue_tuple(queue_of_tuple):
-    return deque(sorted(queue_of_tuple, key=operator.itemgetter(1)))
+def create_heap(data):
 
-
-def create_huffman_tree(data):
-
-    order_freq = get_freq_tuple_list(data)
-
-    new_value = order_freq[0][1] + order_freq[1][1]
-    root = Node(value=new_value)  # The root of the tree
-    root.left = Node(key=order_freq[0][0], value=order_freq[0][1])
-    root.right = Node(key=order_freq[1][0], value=order_freq[1][1])
-    order_freq.popleft()
-    order_freq.popleft()
-
-    while len(order_freq) >= 2:
-        order_freq.append(root)
-
-        order_freq = sort_queue_tuple(order_freq)
-    else:
-        return root
-
+    freq_dict = get_freq_tuple_list(data)
+    heap = Heap()
+    for char, freq in freq_dict.items():
+        node = Node(char=char, freq=freq)
+        heap.insert(node)
+    return heap
 
 
 def huffman_encoding(data):
-    pass
+    heap = create_heap(data)
+    while heap.size() > 1:
+
+        # Find the two character with the least frequency
+        right = heap.remove()
+        left = heap.remove()
+        new_freq = left.freq + right.freq
+        new_node = Node(freq=new_freq)
+        heap.insert(new_node)
+        new_node.left = left
+        new_node.right = right
+
+    huffman_dict = {}
+    node = heap.cbt[0]
+    node.code = ''  # THe head node doesn't need to have any code.
+
+    def traverse(node, huffman_dict):
+        # Assign zero to all the right node, and assign one to all the left node
+        if node.left:
+            node.left.code = '{}0'.format(node.code)
+            if node.left.char:
+                huffman_dict[node.left.char] = node.left.code
+            traverse(node.left, huffman_dict)
+
+        if node.right:
+            node.right.code = '{}1'.format(node.code)
+            if node.right.char:
+                huffman_dict[node.right.char] = node.right.code
+            traverse(node.right, huffman_dict)
+
+    traverse(node, huffman_dict)
+
+    coding = ''
+    for char in data:
+        coding += huffman_dict[char]
+
+    return coding, node
 
 
 def huffman_decoding(data,tree):
