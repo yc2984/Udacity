@@ -215,7 +215,6 @@ if __name__ == "__main__":
     codes = {}
 
     a_great_sentence = "The bird is the word"
-    a_great_sentence = "yaaang"
 
     print ("The size of the data is: {}\n".format(sys.getsizeof(a_great_sentence)))
     print ("The content of the data is: {}\n".format(a_great_sentence))
