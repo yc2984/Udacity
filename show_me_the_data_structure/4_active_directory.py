@@ -23,6 +23,8 @@ class Group(object):
 
 parent = Group("parent")
 child = Group("child")
+child_2 = Group('child_2')
+sub_subchild = Group('sub_subchild')
 sub_child = Group("subchild")
 
 sub_child_user = "sub_child_user"
@@ -30,6 +32,10 @@ sub_child.add_user(sub_child_user)
 
 child.add_group(sub_child)
 parent.add_group(child)
+child.add_group(sub_subchild)
+
+sub_subchild_user = 'sub_sub_child_user'
+sub_subchild.add_user(sub_subchild_user)
 
 
 # Write a function that provides an efficient look up of whether the user is in a group.
@@ -54,6 +60,19 @@ def is_user_in_group(user, group):
 # This one should return True
 result = is_user_in_group(sub_child_user, parent)
 print("result: {}".format(result))
+
 # This one should return False
 result = is_user_in_group('random', parent)
+print("result: {}".format(result))
+
+# This test tests more than two layers, This one should return True
+result = is_user_in_group('sub_sub_child_user', parent)
+print("result: {}".format(result))
+
+# This test tests more than two layers, This one should return True
+result = is_user_in_group('sub_sub_child_user', child)
+print("result: {}".format(result))
+
+# This test tests more than two layers, This one should return False
+result = is_user_in_group('sub_sub_child_user', child_2)
 print("result: {}".format(result))

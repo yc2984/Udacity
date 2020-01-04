@@ -82,10 +82,22 @@ class BlockChain:
 
 my_block_chain = BlockChain()
 my_block_chain.append(datetime(2020, 1, 1), 'This is the first block of my block chain')
+# this is the 1 th block of the chain
+# timestamp of this block: 2020-01-01 00:00:00
+# data of this block: This is the first block of my block chain
+# previous hash of this block: None
+# hash of this block: 5e175b0fb97e1949dbc1995933d005edfbf0ddf15f8a09cf1fe7f124b8438077
 my_block_chain.append(datetime(2020, 1, 2), 'This is the second block of my block chain')
+# this is the 2 th block of the chain
+# timestamp of this block: 2020-01-02 00:00:00
+# data of this block: This is the second block of my block chain
+# previous hash of this block: 5e175b0fb97e1949dbc1995933d005edfbf0ddf15f8a09cf1fe7f124b8438077
+# hash of this block: 5ec21d404ec6c44c284bd2db83dd693185ebaab0882d26e4746c9678faf6a30c
 my_block_chain.append(datetime(2020, 1, 3), 'This is the third block of my block chain')
 my_block_chain.print()
-
-empty_chain = BlockChain()
-empty_chain.print()
+# this is the 3 th block of the chain
+# timestamp of this block: 2020-01-03 00:00:00
+# data of this block: This is the third block of my block chain
+# previous hash of this block: 5ec21d404ec6c44c284bd2db83dd693185ebaab0882d26e4746c9678faf6a30c
+# hash of this block: 7d80b8bc09f4ba608ff2cd3a59290f3fb630a4ad9b6560d159bc4be171cc6cfc
 

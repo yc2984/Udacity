@@ -134,7 +134,7 @@ def get_freq_tuple_list(data):
             freq_dict[letter] = 1
         else:
             freq_dict[letter] += 1
-    print(freq_dict)
+    # print(freq_dict)
     return freq_dict
 
 
@@ -203,6 +203,10 @@ def huffman_decoding(data, tree):
     while index <= len(data) - 1:
         # for every character, we have to traverse from the top of the tree
         node = tree
+        if node.char:
+        # It means this tree contains only 1 node, it dosn't need to go through the while loop, but the index has to go on.
+            index += 1
+
         # This loop ends until there are no child node any more, it means we decoded one character
         while node.left:  # The huffman tree is a complete tree, so if there is no left child, there is also no right child
             code = data[index]
@@ -221,10 +225,10 @@ def huffman_decoding(data, tree):
 if __name__ == "__main__":
     codes = {}
 
+    #########################################################################
+    # test case 1: normal
     a_great_sentence = "The bird is the word"
-    # a_great_sentence = "aaa"
-    # a_great_sentence = ""
-
+    print("\n test case 1")
     print ("The size of the data is: {}\n".format(sys.getsizeof(a_great_sentence)))
     print ("The content of the data is: {}\n".format(a_great_sentence))
 
@@ -237,4 +241,42 @@ if __name__ == "__main__":
     decoded_data = huffman_decoding(encoded_data, tree)
 
     print ("The size of the decoded data is: {}\n".format(sys.getsizeof(decoded_data)))
-    print ("The content of the encoded data is: {}\n".format(decoded_data))
+    print ("The content of the decoded data is: {}\n".format(decoded_data))
+    # Expected: The bird is the word
+
+    ########################################################################
+    # test case 2: repeated characters
+    a_great_sentence = "aaa"
+    print("\n test case 2")
+    print ("The size of the data is: {}\n".format(sys.getsizeof(a_great_sentence)))
+    print ("The content of the data is: {}\n".format(a_great_sentence))
+
+    encoded_data, tree = huffman_encoding(a_great_sentence)
+    if len(encoded_data) > 0:  # Cannot print the size of an empty string
+        print ("The size of the encoded data is: {}\n".format(sys.getsizeof(int(encoded_data, base=2))))
+    print ("The content of the encoded data is: {}\n".format(encoded_data))
+    print ("The size of the tree is {}\n".format(sys.getsizeof(tree)))
+
+    decoded_data = huffman_decoding(encoded_data, tree)
+
+    print ("The size of the decoded data is: {}\n".format(sys.getsizeof(decoded_data)))
+    print ("The content of the decoded data is: {}\n".format(decoded_data))
+    # Expected "aaa"
+    #########################################################################
+    # test case 3: empty string
+    a_great_sentence = ""
+    print("\n test case 3")
+    print ("The size of the data is: {}\n".format(sys.getsizeof(a_great_sentence)))
+    print ("The content of the data is: {}\n".format(a_great_sentence))
+
+    encoded_data, tree = huffman_encoding(a_great_sentence)
+    if len(encoded_data) > 0:  # Cannot print the size of an empty string
+        print ("The size of the encoded data is: {}\n".format(sys.getsizeof(int(encoded_data, base=2))))
+    print ("The content of the encoded data is: {}\n".format(encoded_data))
+    print ("The size of the tree is {}\n".format(sys.getsizeof(tree)))
+
+    decoded_data = huffman_decoding(encoded_data, tree)
+
+    print ("The size of the decoded data is: {}\n".format(sys.getsizeof(decoded_data)))
+    print ("The content of the decoded data is: {}\n".format(decoded_data))
+    # Expected ""

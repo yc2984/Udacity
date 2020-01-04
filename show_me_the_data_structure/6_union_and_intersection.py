@@ -104,9 +104,12 @@ for i in element_2:
     linked_list_2.append(i)
 
 print (union(linked_list_1,linked_list_2))
+# Expected: 32 -> 65 -> 2 -> 35 -> 3 -> 4 -> 6 -> 1 -> 9 -> 11 -> 21 ->
 print (intersection(linked_list_1,linked_list_2))
+# Expected: 4 -> 21 -> 6 ->
 
-# Test case 2
+
+# Test case 2: no intersection
 
 linked_list_3 = LinkedList()
 linked_list_4 = LinkedList()
@@ -121,4 +124,25 @@ for i in element_2:
     linked_list_4.append(i)
 
 print (union(linked_list_3,linked_list_4))
+# Expected: 65 -> 2 -> 35 -> 3 -> 4 -> 6 -> 1 -> 7 -> 8 -> 9 -> 11 -> 21 -> 23 ->
 print (intersection(linked_list_3,linked_list_4))
+# Expected: empty
+
+# Test case 3: empty list
+
+linked_list_5 = LinkedList()
+linked_list_6 = LinkedList()
+
+element_1 = []
+element_2 = [1,7,8,9,11,21,1]
+
+for i in element_1:
+    linked_list_5.append(i)
+
+for i in element_2:
+    linked_list_6.append(i)
+
+print (union(linked_list_5,linked_list_6))
+# Expected : 1 -> 7 -> 8 -> 9 -> 11 -> 21 ->
+print (intersection(linked_list_5,linked_list_6))
+# Expected: empty

@@ -27,7 +27,11 @@ def find_files(suffix, path):
        a list of paths
     """
     output = []
-    for item in os.listdir(path):
+    try:
+        file_list = os.listdir(path)
+    except FileNotFoundError:
+        return []
+    for item in file_list:
         # First see if the item is a file, if it's a file then we don't have to go deeper inside to see if there's any subdir
         if os.path.isfile(os.path.join(path, item)):
             if item.endswith(suffix):
@@ -35,9 +39,15 @@ def find_files(suffix, path):
         else:  # It means the item is a directory instead of a file, we need to recursively get the files
             # Here extend is used to merge two lists
             output.extend(find_files(suffix, os.path.join(path, item)))
-    print(output)
     return output
 
-# Test function
+# Test functions
 
-find_files('.c', 'testdir')
+print("found files: \n", find_files('.c', 'testdir'))
+# Expected result: ['testdir/subdir3/subsubdir1/b.c', 'testdir/t1.c', 'testdir/subdir5/a.c', 'testdir/subdir1/a.c']
+
+print("found files: \n", find_files('.c', 'testdir2'))
+# Expected result: ['testdir2/subdir1/subsubdir1/test.c', 'testdir2/subdir1/test.c']
+
+print("found files: \n", find_files('.c', 'non_existent_dir'))
+# Expected result []
