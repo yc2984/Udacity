@@ -147,8 +147,24 @@ def create_heap(data):
     return heap
 
 
+def traverse(node, huffman_dict):
+    # Assign zero to all the right node, and assign one to all the left node
+    if node.left:
+        node.left.code = '{}0'.format(node.code)
+        if node.left.char:
+            huffman_dict[node.left.char] = node.left.code
+        traverse(node.left, huffman_dict)
+    if node.right:
+        node.right.code = '{}1'.format(node.code)
+        if node.right.char:
+            huffman_dict[node.right.char] = node.right.code
+        traverse(node.right, huffman_dict)
+
+
 def huffman_encoding(data):
     heap = create_heap(data)
+    if heap.size() == 0:  # This is an empty string
+        return data, Node(freq=0)
     while heap.size() > 1:
 
         # Find the two character with the least frequency
@@ -164,22 +180,10 @@ def huffman_encoding(data):
     node = heap.cbt[0]
     node.code = ''  # THe head node doesn't need to have any code.
 
-    def traverse(node, huffman_dict):
-        # Assign zero to all the right node, and assign one to all the left node
-        if node.left:
-            node.left.code = '{}0'.format(node.code)
-            if node.left.char:
-                huffman_dict[node.left.char] = node.left.code
-            traverse(node.left, huffman_dict)
-
-        if node.right:
-            node.right.code = '{}1'.format(node.code)
-            if node.right.char:
-                huffman_dict[node.right.char] = node.right.code
-            traverse(node.right, huffman_dict)
+    if not node.left:  # It means that there is only 1 type of characters in the data
+        huffman_dict[node.char] = '0'
 
     traverse(node, huffman_dict)
-
     coding = ''
     for char in data:
         coding += huffman_dict[char]
@@ -189,9 +193,9 @@ def huffman_encoding(data):
 
 def huffman_decoding(data, tree):
     # First traverse the tree to get the huffman_dict and then traverse the coding
-    # Question, TODO: am I allowed to store the huffman_dict??
     result = ''
-
+    if not tree:
+        return result
     index = 0
     while index <= len(data) - 1:
         # for every character, we have to traverse from the top of the tree
@@ -215,15 +219,17 @@ if __name__ == "__main__":
     codes = {}
 
     a_great_sentence = "The bird is the word"
+    # a_great_sentence = "aaa"
+    # a_great_sentence = ""
 
     print ("The size of the data is: {}\n".format(sys.getsizeof(a_great_sentence)))
     print ("The content of the data is: {}\n".format(a_great_sentence))
 
     encoded_data, tree = huffman_encoding(a_great_sentence)
-
-    print ("The size of the encoded data is: {}\n".format(sys.getsizeof(int(encoded_data, base=2))))
+    if len(encoded_data) > 0:  # Cannot print the size of an empty string
+        print ("The size of the encoded data is: {}\n".format(sys.getsizeof(int(encoded_data, base=2))))
     print ("The content of the encoded data is: {}\n".format(encoded_data))
-    print ("The size of the tree is {}\n".format(sys.getsizeof(tree)))  # My question, TODO: the tree itself is taking much more space than the data itself.
+    print ("The size of the tree is {}\n".format(sys.getsizeof(tree)))
 
     decoded_data = huffman_decoding(encoded_data, tree)
 
