@@ -2,6 +2,7 @@ import sys
 
 class Node:
     def __init__(self, freq, char=None):
+        # char attr is not required because in huffman tree, when we start to combine nodes, we generate nodes with only frequency
         self.char = char
         self.freq = freq
         self.code = None
@@ -138,7 +139,7 @@ def get_freq_tuple_list(data):
 
 
 def create_heap(data):
-
+    # Create a heap from the input string
     freq_dict = get_freq_tuple_list(data)
     heap = Heap()
     for char, freq in freq_dict.items():
@@ -148,6 +149,7 @@ def create_heap(data):
 
 
 def traverse(node, huffman_dict):
+    # This function traverse the huffman tree recursively and fill the huffman_dict with character as key, and the corresponding codes as values
     # Assign zero to all the right node, and assign one to all the left node
     if node.left:
         node.left.code = '{}0'.format(node.code)
@@ -166,9 +168,9 @@ def huffman_encoding(data):
     if heap.size() == 0:  # This is an empty string
         print("cannot encode an empty string")
         return data, Node(freq=0)
+    # this while loop builds the huffman tree
     while heap.size() > 1:
-
-        # Find the two character with the least frequency
+        # Find the two character with the least frequency and create a new node with only freq attr but no char attr
         right = heap.remove()
         left = heap.remove()
         new_freq = left.freq + right.freq
@@ -178,18 +180,18 @@ def huffman_encoding(data):
         new_node.right = right
 
     huffman_dict = {}
-    node = heap.cbt[0]
-    node.code = ''  # THe head node doesn't need to have any code.
+    head = heap.cbt[0] # This head if the huffman tree
+    head.code = ''  # THe head node doesn't need to have any code.
 
-    if not node.left:  # It means that there is only 1 type of characters in the data
-        huffman_dict[node.char] = '0'
+    if not head.left:  # It means that there is only 1 type of characters in the data
+        huffman_dict[head.char] = '0'
 
-    traverse(node, huffman_dict)
+    traverse(head, huffman_dict)
     coding = ''
     for char in data:
         coding += huffman_dict[char]
 
-    return coding, node
+    return coding, head
 
 
 def huffman_decoding(data, tree):
