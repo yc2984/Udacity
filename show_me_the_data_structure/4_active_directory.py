@@ -31,6 +31,7 @@ sub_child.add_user(sub_child_user)
 child.add_group(sub_child)
 parent.add_group(child)
 
+
 # Write a function that provides an efficient look up of whether the user is in a group.
 def is_user_in_group(user, group):
     """
@@ -40,4 +41,19 @@ def is_user_in_group(user, group):
       user(str): user name/id
       group(class:Group): group to check user membership against
     """
-    return None
+    if user in group.users:
+        return True
+    else:
+        for sub_group in group.groups:
+            if is_user_in_group(user, sub_group):
+                return True
+        return False
+
+
+# Tests:
+# This one should return True
+result = is_user_in_group(sub_child_user, parent)
+print("result: {}".format(result))
+# This one should return False
+result = is_user_in_group('random', parent)
+print("result: {}".format(result))
