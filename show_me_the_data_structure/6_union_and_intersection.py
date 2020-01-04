@@ -5,7 +5,6 @@ You will take in two linked lists and return a linked list that is composed of e
 
 We have provided a code template below, you are not required to use it:"""
 
-
 class Node:
     def __init__(self, value):
         self.value = value
@@ -49,14 +48,46 @@ class LinkedList:
 
         return size
 
+
 def union(llist_1, llist_2):
-    # Your Solution Here
-    pass
+    node_1 = llist_1.head
+    node_2 = llist_2.head
+    unique_values = set()
+
+    while node_1:
+        unique_values.add(node_1.value)
+        node_1 = node_1.next
+
+    while node_2:
+        unique_values.add(node_2.value)
+        node_2 = node_2.next
+
+    result_list = LinkedList()
+    for value in unique_values:
+        result_list.append(value)
+    return result_list
+
 
 def intersection(llist_1, llist_2):
-    # Your Solution Here
-    pass
+    node_1 = llist_1.head
+    unique_values_1 = set()
 
+    while node_1:
+        unique_values_1.add(node_1.value)
+        node_1 = node_1.next
+
+    node_2 = llist_2.head
+    unique_values_2 = set()
+    while node_2:
+        unique_values_2.add(node_2.value)
+        node_2 = node_2.next
+
+    unique_values = unique_values_1.intersection(unique_values_2)
+    result_list = LinkedList()
+    for value in unique_values:
+        result_list.append(value)
+
+    return result_list
 
 # Test case 1
 
