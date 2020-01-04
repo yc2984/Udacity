@@ -1,6 +1,4 @@
 import sys
-import operator
-from collections import deque
 
 class Node:
     def __init__(self, freq, char=None):
@@ -189,13 +187,35 @@ def huffman_encoding(data):
     return coding, node
 
 
-def huffman_decoding(data,tree):
-    pass
+def huffman_decoding(data, tree):
+    # First traverse the tree to get the huffman_dict and then traverse the coding
+    # Question, am I allowed to store the huffman_dict??
+    result = ''
+
+    index = 0
+    while index <= len(data) - 1:
+        # for every character, we have to traverse from the top of the tree
+        node = tree
+        # This loop ends until there are no child node any more, it means we decoded one character
+        while node.left:  # The huffman tree is a complete tree, so if there is no left child, there is also no right child
+            code = data[index]
+            if code == '0':
+                node = node.left
+            else:
+                node = node.right
+            index += 1
+
+        char = node.char
+        result += char
+
+    return result
+
 
 if __name__ == "__main__":
     codes = {}
 
     a_great_sentence = "The bird is the word"
+    a_great_sentence = "yaaang"
 
     print ("The size of the data is: {}\n".format(sys.getsizeof(a_great_sentence)))
     print ("The content of the data is: {}\n".format(a_great_sentence))
@@ -204,6 +224,7 @@ if __name__ == "__main__":
 
     print ("The size of the encoded data is: {}\n".format(sys.getsizeof(int(encoded_data, base=2))))
     print ("The content of the encoded data is: {}\n".format(encoded_data))
+    print ("The size of the tree is {}\n".format(sys.getsizeof(tree)))  # My question, the tree itself is taking much more space than the data itself.
 
     decoded_data = huffman_decoding(encoded_data, tree)
 
