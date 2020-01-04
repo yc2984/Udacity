@@ -164,6 +164,7 @@ def traverse(node, huffman_dict):
 def huffman_encoding(data):
     heap = create_heap(data)
     if heap.size() == 0:  # This is an empty string
+        print("cannot encode an empty string")
         return data, Node(freq=0)
     while heap.size() > 1:
 
