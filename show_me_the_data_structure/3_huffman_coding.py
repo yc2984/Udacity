@@ -189,7 +189,7 @@ def huffman_encoding(data):
 
 def huffman_decoding(data, tree):
     # First traverse the tree to get the huffman_dict and then traverse the coding
-    # Question, am I allowed to store the huffman_dict??
+    # Question, TODO: am I allowed to store the huffman_dict??
     result = ''
 
     index = 0
@@ -223,7 +223,7 @@ if __name__ == "__main__":
 
     print ("The size of the encoded data is: {}\n".format(sys.getsizeof(int(encoded_data, base=2))))
     print ("The content of the encoded data is: {}\n".format(encoded_data))
-    print ("The size of the tree is {}\n".format(sys.getsizeof(tree)))  # My question, the tree itself is taking much more space than the data itself.
+    print ("The size of the tree is {}\n".format(sys.getsizeof(tree)))  # My question, TODO: the tree itself is taking much more space than the data itself.
 
     decoded_data = huffman_decoding(encoded_data, tree)
 
