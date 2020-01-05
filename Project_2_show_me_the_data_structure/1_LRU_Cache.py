@@ -21,9 +21,7 @@ class LRU_Cache(object):
     def set(self, key, value):
         if self.capacity == 0:
             return
-        # Set the value if the key is not present in the cache. If the cache is at capacity remove the oldest item.
-        if key in self.cache_dict:
-            return
+        # Set the value if there's spaceIf the cache is at capacity remove the oldest item.
         if self.is_full():
             self.remove_least_recently_used()
         else:
@@ -38,7 +36,7 @@ class LRU_Cache(object):
         # last = False is needed because we want to pop the item in an FIFO way, by default last = True, then it will behave like a stack, LIFO
         self.cache_dict.popitem(last=False)
 
-
+# Test 1
 our_cache = LRU_Cache(5)
 
 our_cache.set(1, 1)
@@ -55,3 +53,43 @@ our_cache.set(5, 5)
 our_cache.set(6, 6)
 
 print(our_cache.get(3))      # returns -1 because the cache reached it's capacity and 3 was the least recently used entry
+
+print('test 2 \n')
+# Test 2: When the size is 0, shouldn't be abel to set any values, and when getting values, should always output -1
+our_cache = LRU_Cache(0)
+
+our_cache.set(1, 1)
+our_cache.set(2, 2)
+our_cache.set(3, 3)
+our_cache.set(4, 4)
+
+
+print(our_cache.get(1))     # returns -1
+print(our_cache.get(2))       # returns -1
+print(our_cache.get(9))   # returns -1
+
+our_cache.set(5, 5)
+our_cache.set(6, 6)
+
+print(our_cache.get(3))      # returns -1
+
+# Test 3: When setting the same key with a different value, the cache should be updated.
+print('test 3 \n')
+our_cache = LRU_Cache(5)
+
+our_cache.set(1, 1)
+our_cache.set(1, 10)
+our_cache.set(4, 3)
+our_cache.set(3, 3)
+our_cache.set(4, 40)
+
+
+print(our_cache.get(1))     # returns 10
+print(our_cache.get(2))      # returns -1
+print(our_cache.get(4))      # returns 40
+print(our_cache.get(9))     # returns -1
+
+our_cache.set(5, 5)
+our_cache.set(6, 6)
+
+print(our_cache.get(3))      # returns -1

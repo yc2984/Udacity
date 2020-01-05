@@ -25,8 +25,8 @@ class Block:
 
     def calc_hash(self):
         sha = hashlib.sha256()
-
-        hash_str = self.data.encode('utf-8')  # In python 3, the encoded type is byte
+        time_and_data = str(self.timestamp) + self.data
+        hash_str = time_and_data.encode('utf-8')  # In python 3, the encoded type is byte
 
         sha.update(hash_str)
 
@@ -42,6 +42,7 @@ class BlockChain:
 
     def __init__(self):
         self.head = None
+        self.tail = None
 
     def size(self):
         block = self.head
@@ -51,18 +52,19 @@ class BlockChain:
             size += 1
         return size
 
-    def append(self, timestamp, data):
-
+    def append(self, timestamp=None, data=None):
+        if not timestamp or not data:
+            print("empty data")
+            return
         new_block = Block(timestamp, data)
         if not self.head:
             self.head = new_block
+            self.tail = self.head
             return
 
-        block = self.head
-        while block.next:
-            block = block.next
-        new_block.previous_hash = block.hash
-        block.next = new_block
+        new_block.previous_hash = self.tail.hash
+        self.tail.next = new_block
+        self.tail = new_block
 
     def print(self):
         block = self.head
@@ -86,18 +88,28 @@ my_block_chain.append(datetime(2020, 1, 1), 'This is the first block of my block
 # timestamp of this block: 2020-01-01 00:00:00
 # data of this block: This is the first block of my block chain
 # previous hash of this block: None
-# hash of this block: 5e175b0fb97e1949dbc1995933d005edfbf0ddf15f8a09cf1fe7f124b8438077
+# hash of this block: 7f517d63c85b338fc39dba5e7b71323331f289d5b7699bba623363263339feee
 my_block_chain.append(datetime(2020, 1, 2), 'This is the second block of my block chain')
 # this is the 2 th block of the chain
 # timestamp of this block: 2020-01-02 00:00:00
 # data of this block: This is the second block of my block chain
-# previous hash of this block: 5e175b0fb97e1949dbc1995933d005edfbf0ddf15f8a09cf1fe7f124b8438077
-# hash of this block: 5ec21d404ec6c44c284bd2db83dd693185ebaab0882d26e4746c9678faf6a30c
+# previous hash of this block: 7f517d63c85b338fc39dba5e7b71323331f289d5b7699bba623363263339feee
+# hash of this block: 754589f7a5bb789811739235a3b28c18a9ca53aba207569008d3488d740139d9
 my_block_chain.append(datetime(2020, 1, 3), 'This is the third block of my block chain')
 my_block_chain.print()
 # this is the 3 th block of the chain
 # timestamp of this block: 2020-01-03 00:00:00
 # data of this block: This is the third block of my block chain
-# previous hash of this block: 5ec21d404ec6c44c284bd2db83dd693185ebaab0882d26e4746c9678faf6a30c
-# hash of this block: 7d80b8bc09f4ba608ff2cd3a59290f3fb630a4ad9b6560d159bc4be171cc6cfc
+# previous hash of this block: 754589f7a5bb789811739235a3b28c18a9ca53aba207569008d3488d740139d9
+# hash of this block: f8de026e0072b4eb6dce6b9c331ada0ded8283bcb0dc3a762941cb4c49ed81de
+
+# Test: add None data
+non_block_chain = BlockChain()
+non_block_chain.append(datetime(2020, 1, 3), None)
+non_block_chain.print()
+
+# Test: add empty block
+wrong_case = BlockChain()
+wrong_case.append()
+wrong_case.print()
 

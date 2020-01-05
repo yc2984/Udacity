@@ -47,6 +47,9 @@ def is_user_in_group(user, group):
       user(str): user name/id
       group(class:Group): group to check user membership against
     """
+    if not isinstance(group, Group):
+        print("Not valid group")
+        return False
     if user in group.users:
         return True
     else:
@@ -75,4 +78,12 @@ print("result: {}".format(result))
 
 # This test tests more than two layers, This one should return False
 result = is_user_in_group('sub_sub_child_user', child_2)
+print("result: {}".format(result))
+
+# should return False
+result = is_user_in_group('', child_2)
+print("result: {}".format(result))
+
+# Should print error message and return False
+result = is_user_in_group('sub_sub_child_user', '')
 print("result: {}".format(result))

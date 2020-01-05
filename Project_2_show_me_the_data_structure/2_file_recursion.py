@@ -51,3 +51,7 @@ print("found files: \n", find_files('.c', 'testdir2'))
 
 print("found files: \n", find_files('.c', 'non_existent_dir'))
 # Expected result []
+
+# When give empty suffix, return all files
+print("found files: \n", find_files('', 'testdir'))
+# Expected result  ['testdir/.DS_Store', 'testdir/subdir4/.gitkeep', 'testdir/subdir3/subsubdir1/b.h', 'testdir/subdir3/subsubdir1/b.c', 'testdir/t1.c', 'testdir/subdir2/.gitkeep', 'testdir/subdir5/a.h', 'testdir/subdir5/a.c', 'testdir/t1.h', 'testdir/subdir1/a.h', 'testdir/subdir1/a.c']
