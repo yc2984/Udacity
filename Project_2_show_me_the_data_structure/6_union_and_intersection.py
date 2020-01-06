@@ -82,7 +82,14 @@ def intersection(llist_1, llist_2):
         unique_values_2.add(node_2.value)
         node_2 = node_2.next
 
-    unique_values = unique_values_1.intersection(unique_values_2)
+    short_set = unique_values_1 if len(unique_values_1) <= len(unique_values_2) else unique_values_2
+    long_set = unique_values_1 if len(unique_values_1) > len(unique_values_2) else unique_values_2
+    unique_values = []
+    for value in short_set:
+        # This look up takes O(1)
+        if value in long_set:
+            unique_values.append(value)
+
     result_list = LinkedList()
     for value in unique_values:
         result_list.append(value)
@@ -90,7 +97,7 @@ def intersection(llist_1, llist_2):
     return result_list
 
 # Test case 1
-
+print("\ntest case 1")
 linked_list_1 = LinkedList()
 linked_list_2 = LinkedList()
 
@@ -110,7 +117,7 @@ print (intersection(linked_list_1,linked_list_2))
 
 
 # Test case 2: no intersection
-
+print("\ntest case 2")
 linked_list_3 = LinkedList()
 linked_list_4 = LinkedList()
 
@@ -129,7 +136,7 @@ print (intersection(linked_list_3,linked_list_4))
 # Expected: empty
 
 # Test case 3: empty list
-
+print("\ntest case 3")
 linked_list_5 = LinkedList()
 linked_list_6 = LinkedList()
 
@@ -144,5 +151,24 @@ for i in element_2:
 
 print (union(linked_list_5,linked_list_6))
 # Expected : 1 -> 7 -> 8 -> 9 -> 11 -> 21 ->
+print (intersection(linked_list_5,linked_list_6))
+# Expected: empty
+
+# Test case 4: two empty lists
+print("\ntest case 4")
+linked_list_5 = LinkedList()
+linked_list_6 = LinkedList()
+
+element_1 = []
+element_2 = []
+
+for i in element_1:
+    linked_list_5.append(i)
+
+for i in element_2:
+    linked_list_6.append(i)
+
+print (union(linked_list_5,linked_list_6))
+# Expected: empty
 print (intersection(linked_list_5,linked_list_6))
 # Expected: empty
