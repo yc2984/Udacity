@@ -1,4 +1,42 @@
-def first_and_last_index(arr, number):
+def recursive_binary_search(target, source, left=0):
+    if len(source) == 0:
+        return None
+    center = (len(source)-1) // 2
+    if source[center] == target:
+        return center + left
+    elif source[center] < target:
+        return recursive_binary_search(target, source[center+1:], left+center+1)
+    else:
+        return recursive_binary_search(target, source[:center], left)
+
+
+def find_first(target, source):  # This is the solution provided
+    index = recursive_binary_search(target, source)
+    if not index:
+        return -1
+    while source[index] == target:
+        if index == 0:
+            return index
+        if source[index-1] == target:
+            index -= 1
+        else:
+            return index
+
+
+def find_last(target, source):
+    index = recursive_binary_search(target, source)
+    if not index:
+        return -1
+    while source[index] == target:
+        if index == len(source) - 1:
+            return index
+        if source[index+1] == target:
+            index += 1
+        else:
+            return index
+
+
+def first_and_last_index(arr, number): # [Yay]
     """
     Given a sorted array that may have duplicate values, use binary
     search to find the first and last indexes of a given value.
@@ -9,18 +47,16 @@ def first_and_last_index(arr, number):
     Returns:
         a list containing the first and last indexes of the given value
     """
-    index = the_recursion(arr, number, 0, len(arr) - 1)
-    if index == -1:
-        return -1
-    # First go up
 
-    # Then go down
-
-    # TODO: Write your first_and_last function here
     # Note that you may want to write helper functions to find the start
     # index and the end index
+    if len(arr) == 1:
+        if arr[0] == number:
+            return [0, 0]
+        else:
+            return [-1, -1]
 
-    pass
+    return [find_first(number, arr), find_last(number, arr)]
 
 
 def test_function(test_case):
