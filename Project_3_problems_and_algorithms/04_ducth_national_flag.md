@@ -1,11 +1,7 @@
 **data structure**
-I chose heap sort because it has a runtime of nlogn, which fulfills the requirement. 
+This problem requires to sort the array in single traversal. Since there are only 3 values in the array, then we can 
+keep moving the zeros to the front while moving the twos to the back, and keep ones in their place, then when we finish traversing, the array should be sorted.
 **time complexity** 
-O(nlog(n)), n is the number of element in the input_list
-heap_sort has O(nlog(n)), because the worst runtime for heapify function is the max height of a full binary tree: log(n) 
-and we are doing it for every index of the input_list, so it's O(nlog(n))
+O(n), n is the lenght of the array. Because we only traverse once every element. 
 **space complexity**
-O(n)
-heap_sort has the space complexity of O(1), because it doesn't take extra space, everything happens in place. 
-But the helper arrays take up to the same space than the length of the input_list
-
+O(n), we only need to hold the same size than the input list. 
