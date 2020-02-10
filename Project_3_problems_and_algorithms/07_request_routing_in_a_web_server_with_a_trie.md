@@ -3,22 +3,19 @@ I'm using the given data structure.
 
 **time complexity** 
 
-* add_handler has O(k * n): n = number of parts in the path, k = number of nodes in the RouteTrie
+* add_handler has O(n): n = number of parts in the path
     * split_path: O(n)
-    * RouteTrie.insert: O(k * n)
+    * RouteTrie.insert: O(n)
         * For loop O(n)
-        * RouteTrie.find_part_in_children: O(k)
-        * RouteTrieNode.insert: worst case all the nodes in the trie are the children of this node: O(k)
+        * RouteTrieNode.insert O(1)
 
 
-* lookup: O(k * n) n = number of parts in the path, k = number of nodes in the RouteTrie
+* lookup: O(n) n = number of parts in the path
     * split_path: O(n)
-    * RouteTrie.find: O(n * k)
+    * RouteTrie.find: O(n)
         * For loop O(n)
-        * node.find_part_in_children: O(k)
      
 * split_path: O(n) n = number of parts in the path
-
 
 
 
@@ -27,14 +24,12 @@ I'm using the given data structure.
 * add_handler has O(k + n): n = number of parts in the path, k = number of nodes in the RouteTrie
     * split_path: O(n)
     * RouteTrie.insert: O(k + n)
-        * RouteTrie.find_part_in_children: O(k)
-        * RouteTrieNode.insert: worst case all the nodes in the trie are the children of this node: O(k)
+        * RouteTrieNode.insert O(k + n): worst case all the nodes in the trie are the children of this node and in addition you need to hold the parts in the path. 
 
 
 * lookup: O(k + n) n = number of parts in the path, k = number of nodes in the RouteTrie
     * split_path: O(n)
-    * RouteTrie.find: O(k + n)
-        * node.find_part_in_children: O(k): worst case all the nodes in the trie are the children of this node: O(k)
+    * RouteTrie.find: O(k + n): worst case all the nodes in the trie are the children of this node and in addition you need to hold the parts in the path. 
      
 * split_path: O(n) n = number of parts in the path
 

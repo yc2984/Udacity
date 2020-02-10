@@ -46,7 +46,7 @@ graph1.add_edge(nodeS,nodeR)
 Implement the dfs_search to return the GraphNode with the value search_value starting at the root_node."""
 
 
-def dfs_search(root_node, search_value):  # [YC] This I didn't figure out.. # TODO: Why do you need visited list??
+def dfs_search(root_node, search_value):  # [YC] This I didn't figure out..
     visited = []
     stack = [root_node]
     while len(stack) > 0:
@@ -55,7 +55,7 @@ def dfs_search(root_node, search_value):  # [YC] This I didn't figure out.. # TO
         if current.value == search_value:
             return current
         for child in current.children:
-            if child not in visited:
+            if child not in visited:  # [YC]: Why do you need visited list. -- Because, when you come back to the root node (pop the element from the stack until it's empty, you need to know if that node has been visited or not, otherwise you can never get out of the loop.
                 stack.append(child)
 
 

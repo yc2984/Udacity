@@ -9,19 +9,19 @@ def sqrt(number):
     """
     low = 0
     high = number
-    floor_median = (low + high)//2
+    mid = (low + high)//2
+    while low <= high:
+        mid = (low + high)//2
+        floor_result = mid * mid
 
-    while low <= floor_median <= high:
-        ceiling_median = floor_median + 1
-        floor_result = floor_median * floor_median
-        ceiling_result = ceiling_median * ceiling_median
-
-        if floor_result <= number < ceiling_result:
-            return floor_median
-        elif number >= ceiling_result:
-            floor_median += 1
+        if floor_result == number:
+            return mid
+        elif floor_result < number:
+            low = mid + 1
         else:
-            floor_median -= 1
+            high = mid-1
+
+    return mid
 
 
 # Test cases
@@ -30,3 +30,6 @@ print ("Pass" if  (0 == sqrt(0)) else "Fail")
 print ("Pass" if  (4 == sqrt(16)) else "Fail")
 print ("Pass" if  (1 == sqrt(1)) else "Fail")
 print ("Pass" if  (5 == sqrt(27)) else "Fail")
+print ("Pass" if  (0 == sqrt(0)) else "Fail")
+print ("Pass" if  (100 == sqrt(10000)) else "Fail")
+print ("Pass" if  (100 == sqrt(10030)) else "Fail")

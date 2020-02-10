@@ -4,16 +4,16 @@ class RouteTrieNode:
         # Initialize the node with children as before, plus a handler
         self.part = part
         self.handler = handler
-        self.children = []
+        self.children = {}
 
     def insert(self, part, handler=None):
         # Insert the node as before
         if self.part == part:
-            return self
-        if part in [node.part for node in self.children]:
+            return self  # TODO: Can you return self like this?
+        if part in self.children:
             return
         new_node = RouteTrieNode(part, handler)
-        self.children.append(new_node)
+        self.children.update({part: new_node})
         return new_node
 
 
@@ -23,11 +23,6 @@ class RouteTrie:
         # Initialize the trie with an root node and a handler, this is the root path or home page node
         self.root = RouteTrieNode('/')
 
-    def find_part_in_children(self, part, node):
-        for child in node.children:
-            if child.part == part:
-                return child
-
     def insert(self, parts, handler):
         # Similar to our previous example you will want to recursively add nodes
         # Make sure you assign the handler to only the leaf (deepest) node of this path
@@ -35,9 +30,8 @@ class RouteTrie:
         for part in parts:
             if node.part == part:
                 continue
-            potential_node = self.find_part_in_children(part, node)
-            if potential_node:
-                node = potential_node
+            if part in node.children:
+                node = node.children[part]
             else:
                 new_node = node.insert(part)
                 node = new_node
@@ -50,8 +44,9 @@ class RouteTrie:
         for part in parts:
             if node.part == part:
                 continue
-            node = self.find_part_in_children(part, node)
-            if not node:
+            if part in node.children:
+                node = node.children[part]
+            else:
                 return None
 
         return node.handler
@@ -97,7 +92,7 @@ class Router:
 
 router = Router("root handler")  # remove the 'not found handler' if you did not implement this
 router.add_handler("/home/about", "about handler")  # add a rout
-# some lookups with the expected output
+# # some lookups with the expected output
 print(router.lookup("/"))  # should print 'root handler'
 print(router.lookup("/home"))  # should print 'not found handler' or None if you did not implement one
 print(router.lookup("/home/about"))  # should print 'about handler'
