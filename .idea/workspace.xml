@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$USER_HOME$/Repositories/ewx-intelligence/packages/energyworx-console/gae/ewx_gae/trigger_handlers/service.py" line="51" />
-    <bookmark url="file://$USER_HOME$/Repositories/ewx-intelligence/packages/energyworx/energyworx/domain.py" description="namespace_id" line="1610" />
+    <bookmark url="file://$USER_HOME$/Repositories/ewx-intelligence/packages/energyworx/energyworx/domain.py" description="namespace_id" line="1614" />
     <bookmark url="file://$USER_HOME$/Repositories/ewx-intelligence/packages/energyworx/energyworx/rules/validation/icap_nits_zero_reads_check.py" description="by a dot)." line="86" />
     <bookmark url="file://$USER_HOME$/Repositories/ewx-intelligence/resources/tools/active_scd_timeline_tester.py" description="'internal_datasource_id, ' \" line="20" />
-    <bookmark url="file://$USER_HOME$/Repositories/ewx-intelligence/resources/tools/configurations_compare.py" line="92" />
+    <bookmark url="file://$USER_HOME$/Repositories/ewx-intelligence/packages/energyworx-develop/resources/configs/engie/rules/estimation.json" description="scalar_buildout" line="176" />
+    <bookmark url="file://$USER_HOME$/Repositories/ewx-intelligence/packages/energyworx/energyworx/rules/forecasting/scalar_time_shift_forecast.py" description="return forecast_till" line="201" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c445d3f-da52-4dd4-abda-b6f68d3ee4c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/show_me_the_data_structure/1_LRU_Cache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/show_me_the_data_structure/2_file_recursion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/show_me_the_data_structure/3_huffman_coding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/show_me_the_data_structure/4_active_directory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/show_me_the_data_structure/6_union_and_intersection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/show_me_the_data_structure/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Udacity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Udacity.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_exercises/bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_exercises/bubble_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_exercises/count_inversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_exercises/heapsort.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_exercises/heapsort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_exercises/heapsort_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_exercises/heapsort_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_exercises/pair_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_exercises/pair_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_exercises/pair_sum_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_exercises/pair_sum_solution.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,59 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/excercise/pascal_triangle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/1_LRU_Cache.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/3_huffman_coding.py">
+        <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/02_search_in_a_rotated_sorted_array.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="89" column="37" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/2_file_recursion.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/4_active_directory.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/6_union_and_intersection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="1305">
+              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -94,30 +46,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>swap_nodes</find>
-      <find>counter</find>
-      <find>_reverse_stack_recursion</find>
-      <find>reverse_stack</find>
-      <find>_move_one_step</find>
-      <find>output_100</find>
-      <find>remainder</find>
-      <find>output_10</find>
-      <find>9, 8</find>
-      <find>result</find>
-      <find>new_result</find>
-      <find>met</find>
-      <find>staircase</find>
-      <find>all_codes</find>
-      <find>current_node</find>
-      <find>get_left_node</find>
-      <find>get_right_node</find>
-      <find>left</find>
+      <find>left_index</find>
+      <find>string</find>
+      <find>sorted_string</find>
+      <find>min_element</find>
       <find>arr</find>
-      <find>insert_with_recursion</find>
-      <find>hash_map</find>
-      <find>lambda</find>
-      <find>ordered_freq</find>
-      <find>data</find>
+      <find>parent_index</find>
+      <find>_down_heapify</find>
+      <find>_up_heapify</find>
+      <find>SOAPAsyncResponseTrigger</find>
+      <find>captag</find>
+      <find>insert</find>
+      <find>floor_resuot</find>
+      <find>value</find>
+      <find>number</find>
+      <find>input_list</find>
+      <find>right_node</find>
+      <find>left_node</find>
+      <find>largest_index</find>
+      <find>current_index</find>
+      <find>word</find>
+      <find>node</find>
+      <find>results</find>
+      <find>suffix_helper</find>
+      <find>split_path</find>
+      <find>parts</find>
+      <find>pivot_index</find>
+      <find>graph1</find>
+      <find>target</find>
+      <find>floor_median</find>
+      <find>add_handler</find>
     </findStrings>
     <replaceStrings>
       <replace>remainder_100</replace>
@@ -129,6 +87,19 @@
       <replace>right</replace>
       <replace>cache_dict</replace>
       <replace>order_freq</replace>
+      <replace>create_heap</replace>
+      <replace>high_i</replace>
+      <replace>occurrence</replace>
+      <replace>floor_resuot</replace>
+      <replace>floor_result</replace>
+      <replace>current_value</replace>
+      <replace>target</replace>
+      <replace>right_index</replace>
+      <replace>left_index</replace>
+      <replace>min_index</replace>
+      <replace>index</replace>
+      <replace>number</replace>
+      <replace>mid</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -137,44 +108,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/excercise/pascal_triangle.py" />
-        <option value="$PROJECT_DIR$/excercise/swop_node.py" />
-        <option value="$PROJECT_DIR$/excercise/swap_nodes.py" />
-        <option value="$PROJECT_DIR$/excercise/reverse_polish_notation_solution.py" />
-        <option value="$PROJECT_DIR$/excercise/reverse_a_stack_solution_no_append_method.py" />
-        <option value="$PROJECT_DIR$/excercise/reverse_polish_notation.py" />
-        <option value="$PROJECT_DIR$/excercise/reverse_a_stack.py" />
-        <option value="$PROJECT_DIR$/excercise/minimum_bracket_reversals.py" />
-        <option value="$PROJECT_DIR$/excercise/tower_of_hanoi.py" />
-        <option value="$PROJECT_DIR$/excercise/tower_of_hanoi_solution.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_9.json" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
-        <option value="$PROJECT_DIR$/excercise/return_codes.py" />
-        <option value="$PROJECT_DIR$/excercise/return_codes_steps" />
-        <option value="$PROJECT_DIR$/excercise/return_codes_123" />
-        <option value="$PROJECT_DIR$/excercise/return_codes_solution.py" />
-        <option value="$PROJECT_DIR$/excercise/return_subsets.py" />
-        <option value="$PROJECT_DIR$/excercise/staircase.py" />
-        <option value="$PROJECT_DIR$/excercise/last_index_recursion.py" />
-        <option value="$PROJECT_DIR$/excercise/BST.py" />
-        <option value="$PROJECT_DIR$/excercise/example_solution.py" />
-        <option value="$PROJECT_DIR$/excercise/path_from_root_to_node.py" />
-        <option value="$PROJECT_DIR$/excercise/pair_sum_to_target_solution.py" />
-        <option value="$PROJECT_DIR$/excercise/pair_sum_to_target.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.txt" />
-        <option value="$PROJECT_DIR$/excercise/longest_consecutive_subsequnces.py" />
-        <option value="$PROJECT_DIR$/show_me_the_data_structure/LRU_Cache.py" />
-        <option value="$PROJECT_DIR$/show_me_the_data_structure/file_recursion.py" />
-        <option value="$PROJECT_DIR$/show_me_the_data_structure/3_huffman_coding.py" />
-        <option value="$PROJECT_DIR$/show_me_the_data_structure/4_active_directory.py" />
-        <option value="$PROJECT_DIR$/show_me_the_data_structure/6_union_and_intersection.py" />
+        <option value="$PROJECT_DIR$/show_me_the_data_structure/1_LRU_Cache.md" />
+        <option value="$PROJECT_DIR$/show_me_the_data_structure/2_file_recursion.md" />
+        <option value="$PROJECT_DIR$/show_me_the_data_structure/3_huffman_coding.md" />
+        <option value="$PROJECT_DIR$/show_me_the_data_structure/4_active_directory.md" />
+        <option value="$PROJECT_DIR$/show_me_the_data_structure/5_block_chain.py" />
+        <option value="$PROJECT_DIR$/show_me_the_data_structure/5_block_chain.md" />
+        <option value="$PROJECT_DIR$/show_me_the_data_structure/6_union_and_intersection.md" />
+        <option value="$PROJECT_DIR$/Project_2_show_me_the_data_structure/1_LRU_Cache.py" />
+        <option value="$PROJECT_DIR$/altrithms_exercies/binary_search.py" />
+        <option value="$PROJECT_DIR$/altrithms_exercies/find_first.py" />
+        <option value="$PROJECT_DIR$/altrithms_exercies/binary_tree_recursive.py" />
+        <option value="$PROJECT_DIR$/altrithms_exercies/find_first_and_last_index.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/trie_introduction.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/black_red_tree.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/black_red_tree_walk_through.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/bubble_sort.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/list_inversion.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/count_inversion.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/count_inversion_spent_so_much_time.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/count_inversions_solution.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/case_specific_sorting.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/quick_sort.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/heapsort.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/heapsort_solution.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/sort_0123.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/heap_sort_trial.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/pair_sum.py" />
+        <option value="$PROJECT_DIR$/algorithm_exercises/pair_sum_solution.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/square_root_of_an_integer.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/01_square_root_of_an_integer.md" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/02_search_in_a_retated_sorted_array.md" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/rearrange_array_elements.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/02_search_in_a_rotated_sorted_array.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/03_rearrange_array_elements.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/03_rearrange_array_elements.md" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/04_dutch_national_flag.md" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/04_ducth_national_flag.md" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/06_unsorted_integer_array.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/06_unsorted_integer_array.md" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/Trie.ipynb" />
+        <option value="$PROJECT_DIR$/advanced_algorithms/min_platform_exercise.py" />
+        <option value="$PROJECT_DIR$/advanced_algorithms/minimum_operation.py" />
+        <option value="$PROJECT_DIR$/advanced_algorithms/graph_dfs.py" />
+        <option value="$PROJECT_DIR$/advanced_algorithms/graph_dfs_recursive_approach.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/01_square_root_of_an_integer.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/04_dutch_national_flag.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/05_autocomplete_with_tries.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/05_autocomplete_with_tries.md" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.py" />
+        <option value="$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-61" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,6 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,35 +186,25 @@
             <path>
               <item name="Udacity" type="b2602c69:ProjectViewProjectNode" />
               <item name="Udacity" type="462c0819:PsiDirectoryNode" />
-              <item name="excercise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Udacity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Udacity" type="462c0819:PsiDirectoryNode" />
-              <item name="show_me_the_data_structure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Udacity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="Udacity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="advanced_algorithms" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;JSON&#10;Python" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown&#10;TEXT&#10;JSON&#10;Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project_3_problems_and_algorithms" />
       <recent name="$PROJECT_DIR$/excercise" />
     </key>
   </component>
@@ -237,8 +220,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.file_recursion">
-    <configuration name="LRU_Cache" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.07_request_routing_in_a_web_server_with_a_trie">
+    <configuration name="01_square_root_of_an_integer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,11 +229,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/show_me_the_data_structure" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project_3_problems_and_algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/show_me_the_data_structure/1_LRU_Cache.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project_3_problems_and_algorithms/01_square_root_of_an_integer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -259,7 +242,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="file_recursion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="04_dutch_national_flag" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,11 +250,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/show_me_the_data_structure" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project_3_problems_and_algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/show_me_the_data_structure/2_file_recursion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project_3_problems_and_algorithms/04_dutch_national_flag.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -280,7 +263,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="longest_consecutive_subsequnces" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="05_autocomplete_with_tries" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,11 +271,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/excercise" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project_3_problems_and_algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/excercise/longest_consecutive_subsequnces.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project_3_problems_and_algorithms/05_autocomplete_with_tries.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,7 +284,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pair_sum_to_target_solution" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="07_request_routing_in_a_web_server_with_a_trie" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -309,11 +292,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/excercise" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project_3_problems_and_algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/excercise/pair_sum_to_target_solution.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,7 +305,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pascal_triangle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="graph_dfs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -330,11 +313,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/excercise" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advanced_algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/excercise/pascal_triangle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advanced_algorithms/graph_dfs_interactive_approach.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -345,11 +328,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.file_recursion" />
-        <item itemvalue="Python.LRU_Cache" />
-        <item itemvalue="Python.longest_consecutive_subsequnces" />
-        <item itemvalue="Python.pascal_triangle" />
-        <item itemvalue="Python.pair_sum_to_target_solution" />
+        <item itemvalue="Python.07_request_routing_in_a_web_server_with_a_trie" />
+        <item itemvalue="Python.05_autocomplete_with_tries" />
+        <item itemvalue="Python.04_dutch_national_flag" />
+        <item itemvalue="Python.01_square_root_of_an_integer" />
+        <item itemvalue="Python.graph_dfs" />
       </list>
     </recent_temporary>
   </component>
@@ -366,29 +349,57 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="-61" y="-1080" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24312897" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18799368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16433121" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.23855421" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.11240876" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65610564" visible="true" weight="0.16633664" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49966997" weight="0.17078651" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Pylint" order="7" visible="true" weight="0.31082803" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.18651685" />
+      <window_info anchor="bottom" id="Pylint" order="7" weight="0.06633663" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32970297" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50033003" side_tool="true" weight="0.3955056" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17430227" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.11240876" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65610564" weight="0.18118812" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49966997" visible="true" weight="0.13663366" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.18651685" />
+      <window_info anchor="bottom" id="Pylint" order="7" weight="0.1494382" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32970297" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50033003" side_tool="true" weight="0.3955056" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -499,9 +510,224 @@
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/show_me_the_data_structure/3_huffman_coding.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="109" />
+          <url>file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/6_union_and_intersection.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/binary_search_naive.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/binary_tree_recursive.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/binary_tree_recursive.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="177" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/trie_introduction.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/trie_introduction.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/trie_introduction.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/black_red_tree_walk_through.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/black_red_tree_walk_through.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/black_red_tree_walk_through.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/count_inversion_spent_so_much_time.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/count_inversion_spent_so_much_time.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/count_inversion_spent_so_much_time.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/count_inversion_spent_so_much_time.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/count_inversion_spent_so_much_time.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/count_inversion_spent_so_much_time.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/count_inversions_solution.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/count_inversions_solution.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/case_specific_sorting.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/case_specific_sorting.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/case_specific_sorting.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/3_huffman_coding.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/heapsort.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/3_huffman_coding.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/heapsort.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/heapsort.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/3_huffman_coding.py</url>
+          <line>146</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/sort_012.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/sort_012.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/sort_012.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/pair_sum.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/heapsort_solution.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_exercises/quick_sort.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="350" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="357" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="359" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="360" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -516,52 +742,77 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>os.path.isfile(os.path.join(path, item))</expression-string>
+        <expression-string>find_first(target, source[:new_index + 1])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>our_cache.get(3)</expression-string>
+        <expression-string>os.listdir(path)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>our_cache.get(9)</expression-string>
+        <expression-string>unique_values_1.intersection(unique_values_2)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>our_cache.get(2)</expression-string>
+        <expression-string>unique_values_1 &amp; unique_values_2</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>our_cache.get(1)</expression-string>
+        <expression-string>sha.hexdigest()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>output = path_from_root_to_node(root, data)[1]</expression-string>
+        <expression-string>sys.getsizeof(a_great_sentence)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>staircase(n - first_step_size)</expression-string>
+        <expression-string>sys.getsizeof(a_great_sentence))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>staircase(first_step_size)</expression-string>
+        <expression-string>heap.next_index</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(range(1, 3))</expression-string>
+        <expression-string>self.next_index</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>[node.part for node in self.children]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>'/'.split('/')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>''.join(parts)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>range(0, -100, -1)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>element.suffixes(suffix)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>current_row[j]</expression-string>
         <language-id>Python</language-id>
@@ -582,231 +833,398 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>range(0, n, 1)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/excercise/linkedlist.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/reverse_polish_notation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="71" column="79" selection-start-line="71" selection-start-column="79" selection-end-line="71" selection-end-column="79" />
+    <entry file="file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/2_file_recursion.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="4" column="141" selection-start-line="4" selection-start-column="141" selection-end-line="4" selection-end-column="141" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_6.py" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/NRI_TAGS_na.engie.com.json" />
-    <entry file="file://$PROJECT_DIR$/excercise/swap_nodes.py">
+    <entry file="file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/1_LRU_Cache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/binary_search_naive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/find_first_and_last_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/trie_introduction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/black_red_tree_walk_through.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/binary_tree_recursive.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
+          <caret selection-end-line="24" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/types.py">
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/count_inversion_spent_so_much_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/return_codes_solution.py">
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/bubble_sort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="28" column="436" selection-start-line="28" selection-start-column="436" selection-end-line="28" selection-end-column="436" />
+        <state relative-caret-position="495">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/tower_of_hanoi_solution.py">
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/case_specific_sorting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="870">
+          <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/count_inversions_solution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+        <state relative-caret-position="210">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/reverse_a_stack_solution_no_append_method.py">
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/find_first.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="53" column="223" selection-start-line="53" selection-start-column="223" selection-end-line="53" selection-end-column="223" />
+        <state>
+          <caret selection-end-line="9" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/reverse_polish_notation_solution.py">
+    <entry file="file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/2_file_recursion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="90" column="31" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="31" />
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/tower_of_hanoi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+    <entry file="file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/1_LRU_Cache.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="525">
+            <caret line="35" selection-start-line="35" selection-end-line="35" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/minimum_bracket_reversals.py">
+    <entry file="file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/3_huffman_coding.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="1385">
+          <caret line="196" column="20" selection-start-line="196" selection-start-column="4" selection-end-line="196" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/return_subsets.py">
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/heap_sort_trial.py" />
+    <entry file="file://$USER_HOME$/Downloads/20191119115100972000_NEPOOL_CLP_51081114084_354472006 (1).json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="432">
+          <caret column="4660883" selection-start-column="4660883" selection-end-column="4660883" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/staircase_solution.py">
+    <entry file="file://$USER_HOME$/Downloads/20191120110205593000_NEPOOL_MECO_9029303025.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="637">
+          <caret column="5449069" selection-start-column="5449063" selection-end-column="5449069" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/last_index_recursion.py">
+    <entry file="file://$USER_HOME$/Downloads/20191119122100854000_NEPOOL_COMELEC_29520040030.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/path_from_root_to_node_example_solution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="652">
+          <caret column="4784864" selection-start-column="4784864" selection-end-column="4784864" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/excercise/pair_sum_to_target.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/longest_consecutive_subsequences.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1493">
-          <caret line="224" column="26" selection-start-line="224" selection-start-column="26" selection-end-line="224" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/return_codes_steps_1145">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/return_codes_123">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="26" />
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/excercise/pair_sum_to_target_solution.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_2_show_me_the_data_structure/3_huffman_coding.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/pair_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/heapsort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/pair_sum_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/heapsort_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/03_rearrange_array_elements.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/03_rearrange_array_elements.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/sort_012.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/reverse_a_stack.py">
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/04_dutch_national_flag.md" />
+    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="59" lean-forward="true" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+        <state relative-caret-position="273">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/BST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2066">
-          <caret line="254" column="26" selection-start-line="254" selection-start-column="5" selection-end-line="254" selection-end-column="26" />
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/04_ducth_national_flag.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="6" column="62" lean-forward="true" selection-end-line="6" selection-end-column="62" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/path_from_root_to_node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/longest_consecutive_subsequnces.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="201" column="37" selection-start-line="201" selection-start-column="37" selection-end-line="201" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excercise/pascal_triangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/1_LRU_Cache.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/2_file_recursion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/4_active_directory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/6_union_and_intersection.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/02_search_in_a_retated_sorted_array.md">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="1" column="200" lean-forward="true" selection-start-line="1" selection-start-column="200" selection-end-line="1" selection-end-column="200" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/show_me_the_data_structure/3_huffman_coding.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.md" />
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/06_unsorted_integer_array.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="89" column="37" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="556">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/Trie.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm_exercises/quick_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advanced_algorithms/min_platform_exercise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/01_square_root_of_an_integer.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/04_dutch_national_flag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/01_square_root_of_an_integer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/07_request_routing_in_a_web_server_with_a_trie.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advanced_algorithms/minimum_operation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/05_autocomplete_with_tries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="963">
+          <caret line="82" column="40" lean-forward="true" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/06_unsorted_integer_array.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/05_autocomplete_with_tries.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="360">
+            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advanced_algorithms/graph_dfs_interactive_approach.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="57" column="273" selection-start-line="57" selection-start-column="273" selection-end-line="57" selection-end-column="273" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advanced_algorithms/graph_dfs_recursive_approach.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_3_problems_and_algorithms/02_search_in_a_rotated_sorted_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

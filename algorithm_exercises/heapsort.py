@@ -45,11 +45,30 @@ def heapify(arr, num_element, current_index):
         if max_value == left:
             arr[current_index] = left
             arr[left_child_index] = parent
+            current_index = left_child_index
+            heapify(arr, num_element, current_index)
         if max_value == right:
             arr[current_index] = right
             arr[right_child_index] = left
+            current_index = left_child_index
+            heapify(arr, num_element, current_index)
 
-        current_index += 1
+
+def _up_heapify(arr, num_element, current_index):
+    # print("inside heapify")
+    current_index = len(arr) - 1
+    child_index = current_index
+    while child_index >= 1:
+        parent_index = (child_index - 1) // 2
+        parent_element = arr[parent_index]
+        child_element = arr[child_index]
+        if parent_element < child_element:
+            arr[parent_index] = child_element
+            arr[child_index] = parent_element
+            child_index = parent_index
+        else:
+            break
+
 
 def test_function(test_case):
     heapsort(test_case[0])
