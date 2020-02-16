@@ -29,20 +29,21 @@ class Graph():
             node2.remove_child(node1)
 
 
-def search(node, search_value):
-    if node.value == search_value:
-        return node
-    if not node.children:
-        return
-    visited = []
-    for child in node.children:
-        if child.value not in visited:
-            visited.append(node.value)
-            return search(child, search_value)
+def dfs_recursion_start(self, start_node):
+    visited = {}
+    self.dfs_recursion(start_node, visited)
 
 
-def dfs_search(root_node, search_value):
-    return search(root_node, search_value)
+def dfs_recursion(self, node, visited):
+    if (node == None):
+        return False
+
+    visited[node.value] = True
+    print(node.value)
+
+    for each in node.children:
+        if (each.value not in visited):
+            self.dfs_recursion(each, visited)
 
 
 # Creating a graph as above.
@@ -63,15 +64,11 @@ graph1.add_edge(nodeH,nodeG)
 graph1.add_edge(nodeH,nodeP)
 graph1.add_edge(nodeS,nodeR)
 
-# To verify that the graph is created accurately.
-# Let's just print all the parent nodes and child nodes.
-# for each in graph1.nodes:
-#     print('parent node = ',each.value,end='\nchildren\n')
-#     for each in each.children:
-#         print(each.value,end=' ')
-#     print('\n')
+
+Graph.dfs_recursion_start = dfs_recursion_start
+
+Graph.dfs_recursion = dfs_recursion
+
+print("search result:", graph1.dfs_recursion_start(nodeG))
 
 
-assert nodeA == dfs_search(nodeS, 'A')
-assert nodeS == dfs_search(nodeP, 'S')
-assert nodeR == dfs_search(nodeH, 'R')
