@@ -79,7 +79,7 @@ def traverse_all_edges_and_update_distance_dict(start_node, distance_dict, dista
         old_distance, new_distance = get_min_distance(start_node, distance_dict, edge)
         distance_dict.update({edge.node.value: new_distance})
         if edge.node.value in distance_dict:
-            distance_heap.remove((old_distance, edge.node))  # TODO: [YC] question, how can I use heap here? 
+            distance_heap.remove((old_distance, edge.node))  # TODO: [YC] question, how can I use heap here?
         heapq.heappush(distance_heap, (edge.distance, edge.node))
 
 

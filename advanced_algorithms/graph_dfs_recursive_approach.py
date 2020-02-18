@@ -29,20 +29,23 @@ class Graph():
             node2.remove_child(node1)
 
 
-def search(node, search_value):
+def search(node, search_value, visited):
+    visited.update({node.value: True})
     if node.value == search_value:
         return node
     if not node.children:
         return
-    visited = []
     for child in node.children:
         if child.value not in visited:
-            visited.append(node.value)
-            return search(child, search_value)
+            visited.update({child.value: True})
+            result = search(child, search_value, visited)
+            if not result:
+                continue
+            return result
 
 
 def dfs_search(root_node, search_value):
-    return search(root_node, search_value)
+    return search(root_node, search_value, {})
 
 
 # Creating a graph as above.

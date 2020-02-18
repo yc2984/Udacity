@@ -70,10 +70,11 @@ def dijkstra(start_node, end_node):
     while distance_dict:
         # Pop the shorest path
         current_node, node_distance = sorted(distance_dict.items(), key=lambda x: x[1])[0]
-        shortest_path_to_node[current_node] = distance_dict.pop(current_node)
+        # Add the shortest node and its distance to the shortest_path_to_node dict
+        shortest_path_to_node[current_node] = distance_dict.pop(current_node)  # TODO: [YC] Think about why distance_dict.pop(current_node) is definitely the shortest distance to current_node? Because current_node is currently the closest to the start node, there's no other path that could add up being smaller than its distance.
 
         for edge in current_node.edges:
-            if edge.node in distance_dict:
+            if edge.node in distance_dict:   # [YC] why do you need this line?
                 new_node_distance = node_distance + edge.distance
                 if distance_dict[edge.node] > new_node_distance:
                     distance_dict[edge.node] = new_node_distance
